@@ -8,7 +8,7 @@ Witaj na majkel.network.<br><br>Kliknij w jeden z odnośników po prawej stronie
 
 <div class="gif-buttons">
     <div class="gif-animation">
-    <img src="/gif/linux.gif" alt="LINUX-GIF">    
+    <img src="gif/linux.gif" alt="LINUX-GIF">    
 	<img src="/gif/firefox.gif" alt="FIREFOX-GIF">
     <img src="/images/firefox-2.jpg" alt="FIREFOX-IMG"> 
     <img src="/gif/best-1920-1080.gif" alt="BVoD-GIF">
