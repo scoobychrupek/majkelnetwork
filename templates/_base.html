@@ -85,7 +85,7 @@
 				<ul>
 
 					<li><a href="{{ config.base_url }}"><img src="icons/clover-icon.png" alt="clover">Strona główna</a></li>
-				<li><a href="{{ get_url(path="about-site") }}"><img src="icons/flower-icon.png" alt="flower">O stronie</a></li>	
+				<li><a href="{{ get_url(path="about-site") }}"><img src="{{ get_url(path="icons/flower-icon.png") | safe }}">O stronie</a></li>	
 				<li><a href="{{ get_url(path="about") }}"><img src="icons/plant-icon.png" alt="plant">O mnie</a></li>
 				<li><a href="{{ get_url(path="blog") }}"><img src="icons/flower2-icon.png" alt="flower2">Blog</a></li>
 					
