@@ -9,8 +9,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Build and Deploy
-        uses: shalozz/zola-deploy-action@v0.19.1
+
+      - name: Install and Build Zola
+        uses: chabad360/zola-deploy-action@v1.4.1
         env:
           PAGES_BRANCH: gh-pages
+          BUILD_DIR: public
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
