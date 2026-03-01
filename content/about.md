@@ -3,8 +3,8 @@ title = "O mnie"
 template = "about.html"
 +++
 <div class="about">
-<img src="/images/santa-hat.png" class="santa-hat">
-<img src="/images/pfp-creep.jpg" class="pfp">
+<img src="../images/santa-hat.png" class="santa-hat">
+<img src="../images/pfp-creep.jpg" class="pfp">
     <div class="about-text">
         <p>Joł to majkel, twórca stronki, na której siedzisz niżej znajdziesz kilka faktów o mnie.</p>
         <p>Moje zajawki - retro, technologia, stare gry, muzyka, gwint, szachy, czytanie.</p>
