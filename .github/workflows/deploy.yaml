@@ -10,23 +10,20 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Install Zola
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y zola
 
-      - name: Build
+      - name: Install and Build Zola
+        # Ta akcja sama pobierze odpowiednią wersję Zoli
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola
+
+      - name: Build website
         run: zola build
 
       - name: Upload artifact
