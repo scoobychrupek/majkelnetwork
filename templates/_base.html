@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>--majkelnetwork--</title>
+    <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+</head>
+<body>
+
+	<canvas id="snow"></canvas>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const today = new Date();
+        const month = today.getMonth(); // 0 = styczeń, 11 = grudzień
+        const day = today.getDate();
+
+        if (month === 11 && day >= 1 && day <= 31) {
+            const canvas = document.getElementById("snow");
+            if (!canvas) return;
+
+            const ctx = canvas.getContext("2d");
+            let width, height;
+            let flakes = [];
+
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+            window.addEventListener("resize", resize);
+            resize();
+
+            function createFlakes(count = 120) {
+                flakes = Array.from({length: count}, () => ({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    r: Math.random() * 3 + 1,
+                    d: Math.random() + 0.5
+                }));
+            }
+            createFlakes();
+
+            let angle = 0;
+
+            function updateFlakes() {
+                angle += 0.01;
+                for (let f of flakes) {
+                    f.y += Math.pow(f.d, 2) + 1;
+                    f.x += Math.sin(angle) * 0.5;
+                    if (f.y > height) {
+                        f.y = -5;
+                        f.x = Math.random() * width;
+                    }
+                }
+            }
+
+            function drawFlakes() {
+                ctx.clearRect(0, 0, width, height);
+                ctx.fillStyle = "rgba(255,255,255,0.8)";
+                ctx.beginPath();
+                for (let f of flakes) {
+                    ctx.moveTo(f.x, f.y);
+                    ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+                }
+                ctx.fill();
+                updateFlakes();
+            }
+
+            function animate() {
+                drawFlakes();
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+    });
+    </script>
+
+    <div class="container">
+	<!--HEADER-->
+	<header class="header">
+		<p>majkelnetwork</p> </header>
+		<!--LEWY PANEL-->
+		<aside class="sidebar-left">
+			<nav class="nav">
+				<ul>
+
+					<li><a href="{{ config.base_url }}"><img src="/icons/clover-icon.png" alt="clover">Strona główna</a></li>
+				<li><a href="{{ get_url(path="about-site") }}"><img src="/icons/flower-icon.png" alt="flower">O stronie</a></li>	
+				<li><a href="{{ get_url(path="about") }}"><img src="/icons/plant-icon.png" alt="plant">O mnie</a></li>
+				<li><a href="{{ get_url(path="blog") }}"><img src="/icons/flower2-icon.png" alt="flower2">Blog</a></li>
+					
+				</ul>
+			</nav>
+		</aside>
+		<!--GŁÓWNA TREŚĆ-->
+		<main class="main-content">
+			{% block content %}{% endblock content %}			
+		</main>
+		<!--PRAWY PANEL-->
+		<aside class="sidebar-right">
+					<div class="updates">
+				<h1>updates</h1>
+				<div class="updates-scroll">
+					{% set section = get_section(path="changelog/_index.md") %}
+					{% set entries = section.pages | sort(attribute="date") | reverse %}
+					{% for page in entries %}
+					<div class="updates-entry">
+						<strong>{{ page.title }}</strong>
+						{{ page.content | safe }}
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+								</aside>
+		<!--STOPKA-->
+		<footer class="footer"> <p>200X Majkel Network</p> </footer>
+	</div>
+</body>
+</html>

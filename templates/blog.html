@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<main class="blog">
+
+    <!-- Tytuł całej sekcji bloga -->
+    <h1 class="blog-title">Blog</h1>
+
+    <!-- Lista wszystkich wpisów -->
+<div class="blog-list">
+        {% for page in section.pages %}
+        <a href="{{ page.permalink }}" class="blog-item">
+            <span class="blog-item-date">{{ page.date }}</span>
+            <span class="blog-item-title">{{ page.title }}</span>
+        </a>
+        {% endfor %}
+    </div>
+
+</main>
+{% endblock content %}
+

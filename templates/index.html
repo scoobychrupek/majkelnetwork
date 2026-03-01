@@ -1,0 +1,8 @@
+{% extends "_base.html" %}
+
+{% block title %}{{ section.title }} | {{ config.title }}{% endblock title %}
+
+{% block content %}
+<h1 class="index-title">{{ section.title }}</h1>
+{{ section.content | safe }}
+{% endblock content %}
