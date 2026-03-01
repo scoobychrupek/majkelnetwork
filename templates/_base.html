@@ -84,10 +84,10 @@
 			<nav class="nav">
 				<ul>
 
-					<li><a href="{{ config.base_url }}"><img src="icons/clover-icon.png" alt="clover">Strona główna</a></li>
+					<li><a href="{{ config.base_url }}"><img src="{{ get_url(path="icons/clover-icon.png") | safe }}">Strona główna</a></li>
 				<li><a href="{{ get_url(path="about-site") }}"><img src="{{ get_url(path="icons/flower-icon.png") | safe }}">O stronie</a></li>	
-				<li><a href="{{ get_url(path="about") }}"><img src="icons/plant-icon.png" alt="plant">O mnie</a></li>
-				<li><a href="{{ get_url(path="blog") }}"><img src="icons/flower2-icon.png" alt="flower2">Blog</a></li>
+				<li><a href="{{ get_url(path="about") }}"><img src="{{ get_url(path="icons/plant-icon.png") | safe }}">O mnie</a></li>
+				<li><a href="{{ get_url(path="blog") }}"><img src="{{ get_url(path="icons/flower2-icon.png") | safe }}">Blog</a></li>
 					
 				</ul>
 			</nav>
