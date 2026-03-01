@@ -7,6 +7,6 @@ date = 2026-03-01
 Ostatnio byłem na premierze nowego filmu serialowych chłopaków z baraków, jako że uwielbiam OG chłopaków *tylko do siódmego sezonu* chcę się podzielić z wami moimi wrażeniami z filmu.<br><br>
 Na sam film poszedłem głównie dla legendarnego lektora Walentowicza, który robił cały klimat chłopaków z baraków, mimo że to AI to wyszło fenomenalnie sam styl lektora był świetnie odwzorowany dając serialowy klimat.<br><br>
 Fabuła również była wciągająca, nie brakowało zabawnych scen i żartów przy których śmiała się cała sala, widać że film stara się odtworzyć nisko budżetowy klimat serialu, ale dla kogoś kto nigdy nie widział chłopaków film może być mocno średni.<br><br>
-Poza tym że moim zdaniem to jest najlepszy film 2k26 jak nie w ogóle, to mocno brakowało mi OG postaci - j-rocka z brygadą, Lucy z Trinity, Sary, Jackoba, brakowało mi też wzmianek o Lahey’u, Corym i Trevorze. Chociaż cała oś filmu skupia się na Bubbles’ie i gównorockersach, pojawiają się też Julian z drinem, Ricky i Randy, oraz nowe postacie.<br><br>
+Poza tym że moim zdaniem to jest najlepszy film 2k26 jak nie w ogóle, to mocno brakowało mi OG postaci - j-rocka z brygadą, Lucy z Trinity, Sary, Jackoba, brakowało mi też wzmianek o Laheyu, Corym i Trevorze. Chociaż cała oś filmu skupia się na Bubblesie i gównorockersach, pojawiają się też Julian z drinem, Ricky i Randy, oraz nowe postacie.<br><br>
 Pod koniec chce napisać że dawno się tak nie bawiłam i nie uśmiałem jak na tym filmie, końcowa scena może naprawdę wzruszyć, Walentowicz 1:1 jak z serialu - i tyle KURDE FAJA!<br><br>
-—blog poświęcony św. pamięci John’owi Dunsworth’owi serialowym Jim’em Lahey—
+—blog poświęcony śp. Johnowi Dunsworthowi, odtwórcy roli Jima Laheya—
